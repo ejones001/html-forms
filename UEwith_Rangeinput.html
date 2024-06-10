@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range Input</title>
+    <script>
+        function updateRangeValue(val) {
+            document.getElementById('rangeValue').innerText = val;
+        }
+    </script>
+</head>
+<body>
+    <form action="#" method="post">
+        <label for="rating">Rating:</label>
+        <input type="range" id="rating" name="rating" min="0" max="10" step="1" oninput="updateRangeValue(this.value)" required>
+        <span id="rangeValue">5</span>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
